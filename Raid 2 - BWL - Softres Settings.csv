@@ -1,0 +1,9 @@
+itemId,Item,hard reserved,note,classes,specs,disable class restrictions
+19406,Drake Fang Talisman,No,#loot-rules,Druid;Hunter;Rogue;Warrior,72;73;103;254;260,No
+19387,Chromatic Boots,No,#loot-rules,Warrior,72;73,No
+19385,Empowered Leggings,No,#loot-rules,Paladin;Druid;Priest,65;105;256;257,No
+19379,Neltharion's Tear,No,#loot-rules,Mage;Druid;Priest;Warlock,63;102;258;266;267;64,No
+19377,Prestor's Talisman of Connivery,No,#loot-rules,Druid;Hunter;Rogue,103;254;260,No
+19382,Pure Elementium Band,No,#loot-rules,Paladin;Druid;Priest,65;105;256;257,No
+19395,Rejuvenating Gem,No,#loot-rules,Paladin;Druid;Priest,65;105;257;256,No
+19437,Boots of Pure Thought,No,#loot-rules,Paladin;Druid;Priest,65;105;257;256,No

@@ -1,0 +1,12 @@
+itemId,Item,hard reserved,note,classes,specs,disable class restrictions
+21620,Ring of the Martyr,No,#loot-rules,Druid;Priest;Paladin,65;105;256;257,No
+21604,Bracelets of Royal Redemption,No,#loot-rules,Paladin;Druid;Priest,65;105;257;256,No
+21615,Don Rigoberto's Lost Hat,No,#loot-rules,Paladin;Priest;Druid,65;105;256;257,No
+23570,Jom Gabbar,No,#loot-rules,Hunter;Rogue;Warrior,72;73;254;260,No
+21586,Belt of Never-ending Agony,No,#loot-rules,Druid;Rogue,103;104;260,No
+21585,Dark Storm Gauntlets,No,#loot-rules,Mage;Druid;Priest;Warlock,63;102;258;266;267,No
+21126,Death's Sting,No,#loot-rules,Rogue;Warrior,72;260;73,No
+21221,Eye of C'Thun,No,#loot-rules,Mage;Paladin;Warrior;Druid;Hunter;Priest;Rogue;Warlock,63;65;72;73;102;103;104;105;254;256;257;258;260;266;267,No
+22730,Eyestalk Waist Cord,No,#loot-rules,Mage;Druid;Priest;Warlock,63;102;258;267;266,No
+21581,Gauntlets of Annihilation,No,#loot-rules,Warrior,72;73,No
+21839,Scepter of the False Prophet,No,#loot-rules,Paladin;Druid;Priest,65;105;257;256,No
