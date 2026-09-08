@@ -1,13 +1,12 @@
-
-Elpower
-Stoutfoot
-Lei-golemagg
-Affenkeks
-Tazdingo-Firemaw
-ShlachtShane
-Scammer
-maschine-ashbringer
-Onreal-firemaw
-Dreimiro
-Zerks-firemaw
-puppey-firemaw
+- Elpower
+- Stoutfoot
+- Lei-golemagg
+- Affenkeks
+- Tazdingo-Firemaw
+- ShlachtShane
+- Scammer
+- maschine-ashbringer
+- Onreal-firemaw
+- Dreimiro
+- Zerks-firemaw
+- puppey-firemaw
