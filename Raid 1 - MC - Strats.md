@@ -4,7 +4,7 @@ Mark "Safe" ranged
 # Trash
 - Dispel
 # Luci
-- Kill adds
+- Kill adds first
 - Dispel/Decurse
 # Mag
 - Max range
@@ -13,8 +13,7 @@ Mark "Safe" ranged
 - He Fears so fear ward on tank
 - #### Use diamond flask and death wish and even reck
 # Geh
-- Ads away
-- Kill adds
+- Kill adds first
 - Decurse
 - Move from reign of fire
 - #### FAP
@@ -23,12 +22,12 @@ Mark "Safe" ranged
 - Pull apart (but not too far!)
 - Kill boss
 - Kill adds
-- #### Ads explode -> melee run out, tanks back to wall
+- #### Ads explode -> back to wall
 - #### Use diamond flask and death wish
 # Geddon
 - Dispel
 - Run out of fire
-- If bomb, run to ledge
+- If bomb, run to ledge on left
 # Shaz
 - Arcane explosion
 - Nuke
@@ -37,24 +36,24 @@ Mark "Safe" ranged
 # Sulf
 - Tank on boss
 - Tank on all adds, interrupt + kill order
-- #### FAP on boss
+- #### FAP
 - #### Use diamond flask and death wish
 # Golemag
-- Pull adds far enough away (enrage)
+- Pull adds far enough away (watch glowy noses)
 - Kill boss
-- Kill adds
 # Domo
 - #### Shadow prot
-- Cc 3 heal 2 big
+- Don't stand on hot magma patch
+- (optional) Cc 3 heal 2 big
 - Kill left guy
 - Kill priests
 - Kill rest
-- Boss tank use full mitigation -> be ready to get TPd and taunt
+- Boss tank be ready to get TP'd and taunt
 - #### Use diamond flask and death wish
 # Raggy
 - #### Fire res
 - Spread 10y
-- Wrath -> melee run. Full threat wipe. Fury wars + tanks stay in
+- Wrath -> melee run. Full threat wipe.
 - no mana users in melee group
-- Banish adds, group others and kill, when killing last guy, pre spread again
+- (never happens) Banish adds, group others and kill, when killing last guy, pre spread again
 - #### Use diamond flask and death wish

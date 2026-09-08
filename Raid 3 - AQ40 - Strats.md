@@ -21,9 +21,7 @@
 	- Spawn bores on death. Kill one at a time.
 	- Can AoE taunt + lip (even right before death)
 ## Bug Trio
-- Tank 1 Bug in middle, others in corner.
-    - Kill the bug, bring the next to mid.
-    - Loot depends on which you kill last.
+- Tank Bugs stacked till fart froim kri.
 - Princess Yauj (blue)
     - Fears melee.
     - Heals other bugs.
@@ -37,7 +35,7 @@
 ## Battleguard Sartura
 
 - Tank 3 adds against wall.
-    - Kill adds first, stack and aoe/cleave.
+    - Kill adds first, stack, stun and aoe/cleave.
     - rotate taunts (incl dps warriors) + mocking blows
     - Stun everything.
 - Ranged spread out, kite if fixated, use LIPs
@@ -69,8 +67,7 @@
 - Right before he reforms > sappers >  STOP ALL HEALING
 ## Princess Huhuran
 - Wear Nature Resist gear as you see fit. GNPP before pull.
-- Don't dispel melee (only Tanks).d
-- Might need tank swap so second tank try and get high.
+- Don't dispel melee (only Tank).
 - Ranged spread out.
 - Hunters Tranq Shot when Boss enrages.
 - At 30% all paladins and dwarves run in and hug the boss with shield or stoneform. Use second GNPP.
@@ -78,29 +75,29 @@
 ## Boon
 ## Trash 5:
 - Defenders
-	- Meteor vs Plague: Stack vs Plagued run (small range, but do run out)
-	- Shadow storm vs Thunderclap: Hug vs stand away
+	- stack in a melee and ranged group 
+	- Meteor vs Plague: Plagued run out (small range, but do run out)
+	- Shadow storm vs Thunderclap: one stack vs two stacks
 	- Reflect: Detect magic
 	- Enrage vs Explode: Heals vs EVERYBODY Run
-	- Easy strat: split into ranged and melee
 ## Unboon
 ## Twin Emperors
 - Keep bosses spread apart.
 - NO AoE, if derped, AoE to fix derp.
-- Physical DPS attack Vek'nilash. Move a bit before TP.
-- Magic DPS attack Vek'lor. Stand on stairs.
+- Physical DPS attack Vek'nilash. Move a 5s before TP.
+- Magic DPS attack Vek'lor. Stop ignite 5s before TP.
 - OT pick up adds.
-- Tank swap on Unbalancing Strike (3rd Tank, if necessary).
-- Avoid bug explosions.
+- Tank CD/Shield/Pot on Unbalancing Strike.
+- Avoid bug explosions and blizzards.
 - Bosses swap positions every ~30 seconds (aggro drop).
-    - Melee start running to other side a little early.
+- Only tanks should be closest to boss on TP.
 ## Trash 6:
 - Slayers
 	- AoE Silence
 	- Cleave
 	- Tranq enrage
 	- Knockback so tank vs wall
-	- stack per 2
+	- Stack per 2
 - Champion
 	- 2 Tanks
 	- Knockback so tank vs wall
@@ -109,25 +106,25 @@
 - Mindslayers
 	- Immune to taunt, need two tanks for MC
 	- MC: CC
-	- Move away from raid before death: Fear, Mana drain, damage
+	- Try and kill at same time
 ## Trash 7:
 - Nullifiers
-	- Drain both
-	- Kill one the other
+	- Kill one then other
+	- Drain Second one
 - Warder
 	- Roots and Fear: Fear ward and if possible tank 30y away from raid.
 	- Dust cloud and Silence: Move out? Ranged stay away.
 	- Care for Fire nova
 ## Ouro
-- Tank boss away from raid.
-- Lock/mages max threat and stand to the right and los sandblast, melee other side
+- Tank boss where he sits.
+- Lock max threat and stand to the right and los sandblast with other ranged, melee other side
 - Boss enrages at 20%, burn CDs.
 ## C'Thun
 - Phase 1:
 	- Each group in the raid positions in a slice of the room. Spread at least 10y.
 	- Everyone rotates to avoid the laser.
-	- Kill adds outside: Eye Tentacles first and Giant Claw Tentacles last.
+	- Kill adds outside: Eye Tentacles (INTERRUPT) first and Giant Claw Tentacles last.
 - Phase 2:
 	- Random players will be sent to room: Kill tentacles, then stand on platform.
-    - Kill adds outside: Eye Tentacles first, Giant Eye Tentacles second and Giant Claw Tentacles last.
-	- Raid burns boss after tentacles in room die. KILL GIANT CLAW UPSTAIRS BEFORE FLESH INSIDE.
+    - Kill adds outside: Eye Tentacles (INTERRUPT) first, Giant Eye Tentacles second and Giant Claw Tentacles last. Big ones can be stunned.
+	- Raid burns boss after tentacles in room die. KILL TRASH UPSTAIRS BEFORE FLESH INSIDE.
