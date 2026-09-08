@@ -63,8 +63,8 @@
     - Frost Wands or Mage's rank 1 Frostbolt.
     - Melee can use [Frost Oil](https://classic.wowhead.com/item=3829/frost-oil).
 - Once frozen, only melee attacks work.
-- Boss splits into adds, kill as many as possible.
-- Right before he reforms > sappers >  STOP ALL HEALING
+- Boss splits into adds, kill as many as possible. Spread raid in quadrants.
+- Right before he reforms > jump + sappers >  STOP ALL HEALING
 ## Princess Huhuran
 - Wear Nature Resist gear as you see fit. GNPP before pull.
 - Don't dispel melee (only Tank).
