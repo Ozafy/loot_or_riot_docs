@@ -2,7 +2,7 @@
 # Loot system:
 
 ## SR(MS) > SR(OS) > MS > OS + Bonus
-All 40 man raids will now be 2xSR. A bonus SR can be earned by bringing 3 world buffs or 2 world buffs and a flask (DMT buffs count as 1).
+All 40 man raids are 2xSR. A bonus SR can be earned by bringing 3 world buffs or 2 world buffs and a flask (DMT buffs count as 1).
 All 20 man raids are 2xSR. No Bonus.
 Onyxia is 1xSR. No Bonus.
 # HR

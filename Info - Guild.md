@@ -8,8 +8,8 @@ If at any time during a raid there's something unclear or you feel like you have
 
 # Raids
 This is the current plan for guild raids, things can change, if you have any input feel free to talk to an officer, democracy ftw. Loot rules in the signup > these rules.
-## Days:
-Current raiding days are Thursday and Monday 20h server. Start grouping around 19:30. Replacements in at 19:45. Pulling at 20:00.
+## Times:
+Start grouping around 19:30. Replacements in at 19:45. Pulling at 20:00.
 # Loot
 #loot-rules
 # World buffs
@@ -57,7 +57,6 @@ Decursive: https://www.curseforge.com/wow/addons/decursive
 Details (threat (and damage)): https://www.curseforge.com/wow/addons/details
 Leatrix Plus (QoL): https://www.curseforge.com/wow/addons/leatrix-plus
 Nova Consumes helper: https://www.curseforge.com/wow/addons/nova-consumes-helper
-
 
 # Guildbank
 
