@@ -9,6 +9,7 @@ Onyxia is 1xSR. No Bonus.
 - Bindings of the Windseeker (Left) -> Bug -> OT
 - Bindings of the Windseeker (Right) -> Bug -> OT
 - Eye of Ragnaros -> OS
+- Splinter of Atiesh -> Berluna -> Church -> ???
 - BoE Recipes (+4 stats, Lionhearth, etc...) -> GB
 # MS/OS
 MS: This improves my character for the role I usually play. Examples: You're normally a healer but asked to DPS, you roll MS on healing gear. You're a rogue with swords, a dagger drops and you will respec to increase your DPS in raids, you roll MS.
