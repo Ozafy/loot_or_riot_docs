@@ -60,6 +60,7 @@ Nova Consumes helper: https://www.curseforge.com/wow/addons/nova-consumes-helper
 
 # Guildbank
 
+Only open to members with the "Member" or higher rank.
 Bank items: https://ozafy.net/lootorriot/
 Post the item(s) you want and the item you're replacing/upgrading in #bank-requests .
 We will only keep "rare" raid loot in the GB (tier 1, scales, leather, books, recipes, idols, etc). Other stuff (coins, blues, greens, etc) will be auctioned for the GB's gold.
