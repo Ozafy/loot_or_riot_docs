@@ -7,7 +7,7 @@ All 40 man raids are 2xSR. A bonus SR can be earned IN AQ40 by bringing 3 world 
 # HR
 - Bindings of the Windseeker (Left) -> Malypa -> Protus
 - Bindings of the Windseeker (Right) -> Bug -> Malypa -> Protus
-- Eye of Ragnaros -> OS
+- Eye of Ragnaros -> Free to SR/Lootlist, MS only for Rets
 - Splinter of Atiesh -> Berluna -> Church -> ???
 - BoE Recipes (+4 stats, Lionhearth, etc...) -> GB
 - BoP Recipes -> Rolled out amongst "Raider" and higher rank members with the correct profession.
