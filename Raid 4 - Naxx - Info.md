@@ -1,7 +1,8 @@
 # Naxxramas (Naxx) Preparation & Expectations:
 
-## Guide:
-- https://www.youtube.com/watch?v=pnbati8TwrE
+## Guides:
+- [Video](https://www.youtube.com/watch?v=pnbati8TwrE)
+- [Written](https://docs.google.com/spreadsheets/d/1AeECQETwG0H__XRjqLD4HOe55y5ZtFBs9flwDoOYvls)
 # Attunement
 Complete the quest : The Dread Citadel - Naxxramas in Light's hope chapel for the Argent Dawn:
 - Honored: 60 Gold, 5x Arcane Crystal, 2x Nexus Crystal, 1x Righteous Orb

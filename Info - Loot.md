@@ -1,9 +1,8 @@
 # NO DISCORD -> NO LOOT
-# Loot system:
-
-## Loot List
-[Sign up and create your lootlist here](https://www.lootlistplus.com/guild-select/join?code=G5F0KFHA). While we transition we'll be using SR(MS) > SR(OS) > MS > OS + Bonus.
-All 40 man raids are 2xSR. A bonus SR can be earned IN AQ40 by bringing 3 world buffs or 2 world buffs and a flask (DMT buffs count as 1).
+# Loot system: Loot list
+[Sign up and create your lootlist here](https://www.lootlistplus.com/guild-select/join?code=G5F0KFHA)
+# Attendance
+You can gain attendance points by coming to raids (If we have to bench you but you show up and are ready to go at raid time you will **also** get attendance points for that raid!). Each raid gives you 1 point, for a maximum of 2 per reset and a total of 12 over an 8 week period. For the mathematically less inclined this means: If you attend (or are benched) for two raids every reset you will max your points for that week even if you skip the third (or fourth) raid. You can also take a two week complete break for a vacation or whatever without it having any effect on your attendance score. New members can be completely caught up with long standing members after 6 weeks.
 # HR
 - Bindings of the Windseeker (Left) -> Malypa -> Protus
 - Bindings of the Windseeker (Right) -> Bug -> Malypa -> Protus
@@ -16,7 +15,6 @@ MS: This improves my character for the role I usually play. Examples: You're nor
 OS: This improves my character for a role I sometimes play. Examples: You're normally a healer but asked to DPS, you roll OS on DPS gear. You're a rogue with swords, a dagger drops that would improve your character in PvP, you roll OS.
 If you win an item on a character it is to be used by that character. If for any reason you want to pass after winning, it goes to the next highest roll.
 Greed is not OS. Don't roll OS to vendor.
-
 # Restricted items
 These items can only be reserved if:
 - You have no substantial upgrades left from the raid. Post a gear check in #sr-gear-checks for every raid tier and post an update when you get loot.

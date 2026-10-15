@@ -60,11 +60,11 @@ Nova Consumes helper: https://www.curseforge.com/wow/addons/nova-consumes-helper
 
 # Guildbank
 
-Only open to members with the "Member" or higher rank.
+Only open to members with the "Member" or higher rank. Initiates can request at 50% the going AH rate.
 Bank items: https://ozafy.net/lootorriot/
 Post the item(s) you want and the item you're replacing/upgrading in #bank-requests .
 We will only keep "rare" raid loot in the GB (tier 1, scales, leather, books, recipes, idols, etc). Other stuff (coins, blues, greens, etc) will be auctioned for the GB's gold.
-Raiders can put in requests for mats to craft things for their alts.
+Raiders can put in requests for mats to craft things for their os/alts. Members can too at 50% the going AH rate.
 
 
 Also, make sure you have 'Show All Channels' toggled:

@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Raid Check</title>
+<style>
+:root{--bg:#f6f7f9;--fg:#1d2026;--muted:#5d6470;--card:#fff;--line:#d9dde3;--accent:#2f5aa8}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--fg:#e6e8eb;--muted:#9aa1ab;--card:#1b1e23;--line:#30353d;--accent:#5b8ae0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px 60px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 8px}
+p,li{color:var(--fg)}.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0}
+a.bm{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:bold;padding:9px 16px;border-radius:6px;cursor:grab}
+textarea{width:100%;box-sizing:border-box;height:160px;font:12px monospace;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:8px}
+button{background:var(--accent);color:#fff;border:0;border-radius:6px;padding:7px 14px;cursor:pointer;font-size:14px}
+code{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px}
+ol{padding-left:20px}
+</style></head><body><main>
+<h1>Raid Check</h1>
+<p class="muted">Checks a Warcraft Logs report for world buffs, consumes and enchants. Runs in your browser on vanilla.warcraftlogs.com, so no API key or login is needed.</p>
+
+<h2>Option 1: bookmarklet (easiest)</h2>
+<div class="card">
+<ol>
+<li>Show your bookmarks bar (Ctrl+Shift+B, or Cmd+Shift+B on Mac).</li>
+<li>Drag this button onto the bookmarks bar: &nbsp;<a class="bm" href="javascript:(async()%3D%3E%7Bconst%20e%3D%7B%22Ony%2FNef%22%3A%5B%22Rallying%20Cry%20of%20the%20Dragonslayer%22%5D%2CRend%3A%5B%22Warchief's%20Blessing%22%5D%2CZG%3A%5B%22Spirit%20of%20Zandalar%22%5D%2CSongflower%3A%5B%22Songflower%20Serenade%22%5D%2CDMT%3A%5B%22Fengus'%20Ferocity%22%2C%22Mol'dar's%20Moxie%22%2C%22Slip'kik's%20Savvy%22%5D%2CDMF%3A%5B%2F%5ESayge's%20Dark%20Fortune%2F%5D%7D%2Ct%3D%5B%22Flask%20of%20the%20Titans%22%2C%22Distilled%20Wisdom%22%2C%22Supreme%20Power%22%2C%22Chromatic%20Resistance%22%2C%22Flask%20of%20Petrification%22%2C%22Petrification%22%5D%2Cn%3D%7B%22Elixir%20of%20the%20Mongoose%22%3A%22Mongoose%22%2C%22Elixir%20of%20the%20Giants%22%3A%22Giants%22%2C%22Greater%20Agility%22%3A%22Greater%20Agility%22%2C%22Greater%20Arcane%20Elixir%22%3A%22Greater%20Arcane%22%2C%22Arcane%20Elixir%22%3A%22Arcane%20Elixir%22%2C%22Greater%20Firepower%22%3A%22Greater%20Firepower%22%2C%22Fire%20Power%22%3A%22Firepower%22%2C%22Frost%20Power%22%3A%22Frost%20Power%22%2C%22Shadow%20Power%22%3A%22Shadow%20Power%22%2C%22Mageblood%20Elixir%22%3A%22Mageblood%22%2C%22Health%20II%22%3A%22Fortitude%22%2C%22Greater%20Armor%22%3A%22Superior%20Defense%22%2C%22Juju%20Power%22%3A%22Juju%20Power%22%2C%22Juju%20Might%22%3A%22Juju%20Might%22%2C%22Winterfall%20Firewater%22%3A%22Firewater%22%2C%22Rage%20of%20Ages%22%3A%22R.O.I.D.S.%22%2C%22Strike%20of%20the%20Scorpok%22%3A%22Scorpok%22%2C%22Infallible%20Mind%22%3A%22Cerebral%20Cortex%22%2C%22Spirit%20of%20Zanza%22%3A%22Spirit%20of%20Zanza%22%2C%22Swiftness%20of%20Zanza%22%3A%22Swiftness%20of%20Zanza%22%2C%22Sheen%20of%20Zanza%22%3A%22Sheen%20of%20Zanza%22%2C%22Gordok%20Green%20Grog%22%3A%22Green%20Grog%22%2C%22Kreeg's%20Stout%20Beatdown%22%3A%22Kreeg's%22%2C%22Rumsey%20Rum%20Black%20Label%22%3A%22Rumsey%20Rum%22%2C%22Blessed%20Sunfruit%22%3A%22Sunfruit%22%2C%22Blessed%20Sunfruit%20Juice%22%3A%22Sunfruit%20Juice%22%2C%22Well%20Fed%22%3A%22Food%22%2C%22Mana%20Regeneration%2318194%22%3A%22Nightfin%20Soup%22%2C%22Increased%20Agility%2318192%22%3A%22Grilled%20Squid%22%2C%22Increased%20Stamina%2318191%22%3A%22Food%20(Stamina)%22%2C%22Increased%20Stamina%2325661%22%3A%22Chimaerok%20Chops%22%2C%22Increased%20Intellect%2322730%22%3A%22Runn%20Tum%20Tuber%22%2C%22Greater%20Stoneshield%22%3A%22Greater%20Stoneshield%22%2C%22Fire%20Protection%2317543%22%3A%22GFPP%22%2C%22Nature%20Protection%2317546%22%3A%22GNPP%22%2C%22Shadow%20Protection%2317548%22%3A%22GSPP%22%2C%22Arcane%20Protection%2317549%22%3A%22GAPP%22%2C%22Frost%20Protection%2317544%22%3A%22GFrPP%22%2C%22Free%20Action%236615%22%3A%22Free%20Action%22%2C%22Restoration%2311359%22%3A%22Restorative%22%2C%22Regeneration%2324361%22%3A%22Major%20Troll%20Blood%22%2C%22Mighty%20Rage%2317528%22%3A%22Mighty%20Rage%22%2C%22Noggenfogger%20Elixir%22%3A%22Noggenfogger%22%7D%2Cr%3D!0%2Ca%3D!0%2Co%3D%5B625%2C627%5D%2Ci%3D%7B4%3A%22Chest%22%2C7%3A%22Feet%22%2C8%3A%22Wrist%22%2C9%3A%22Hands%22%2C14%3A%22Back%22%2C15%3A%22Main%20hand%22%2C16%3A%22Off%20hand%22%2C17%3A%22Ranged%22%7D%2Cs%3D%2F%5Einv_(shield%7Csword%7Caxe%7Cmace%7Chammer%7Cweapon%7Cknife%7Cstaff%7Cspear%7Cgauntlets)%2Fi%2Cc%3D%5B%22Hunter%22%5D%2Cl%3D%5B%22Warrior%22%2C%22Rogue%22%2C%22Hunter%22%2C%22Mage%22%2C%22Warlock%22%2C%22Priest%22%2C%22Druid%22%2C%22Paladin%22%2C%22Shaman%22%5D%2Cd%3De%3D%3Ee.replace(%2F%5B%E2%80%98%E2%80%99%60%5D%2Fg%2C%22'%22).trim()%2Cp%3D(e%2Ct)%3D%3Et%20instanceof%20RegExp%3Ft.test(e)%3Ad(t)%3D%3D%3De%3Basync%20function%20h(e%2Ct)%7Bfor(let%20n%3D0%3Bn%3C3%3Bn%2B%2B)%7Bconst%20r%3Dawait%20fetch(e%2C%7Bcredentials%3A%22include%22%7D)%3Bif(r.ok)return%20t%3Fr.json()%3Ar.text()%3Bawait%20new%20Promise((e%3D%3EsetTimeout(e%2C1e3*(n%2B1))))%7Dthrow%20new%20Error(%22Request%20failed%3A%20%22%2Be)%7Ddocument.getElementById(%22raidcheck-panel%22)%3F.remove()%3Bconst%20g%3Ddocument.createElement(%22div%22)%3Bg.id%3D%22raidcheck-panel%22%2Cg.innerHTML%3D'%5Cn%20%20%3Cstyle%3E%5Cn%20%20%20%20%23raidcheck-panel%7Bposition%3Afixed%3Btop%3A20px%3Bright%3A20px%3Bwidth%3Amin(760px%2Ccalc(100vw%20-%2040px))%3Bmax-height%3Acalc(100vh%20-%2040px)%3Boverflow%3Aauto%3Bz-index%3A2147483647%3Bbackground%3A%2316181d%3Bcolor%3A%23e6e6e6%3Bborder%3A1px%20solid%20%23444%3Bborder-radius%3A8px%3Bpadding%3A14px%2016px%3Bfont%3A13px%2F1.45%20Arial%2Csans-serif%3Bbox-shadow%3A0%208px%2030px%20rgba(0%2C0%2C0%2C.6)%7D%5Cn%20%20%20%20%23raidcheck-panel%20h2%7Bfont-size%3A16px%3Bmargin%3A0%200%208px%7D%5Cn%20%20%20%20%23raidcheck-panel%20h3%7Bfont-size%3A14px%3Bmargin%3A14px%200%204px%7D%5Cn%20%20%20%20%23raidcheck-panel%20textarea%7Bwidth%3A100%25%3Bbox-sizing%3Aborder-box%3Bheight%3A52px%3Bbackground%3A%230d0f12%3Bcolor%3A%23e6e6e6%3Bborder%3A1px%20solid%20%23444%3Bborder-radius%3A4px%3Bfont%3A12px%20monospace%3Bpadding%3A6px%7D%5Cn%20%20%20%20%23raidcheck-panel%20button%7Bbackground%3A%232f5aa8%3Bcolor%3A%23fff%3Bborder%3A0%3Bborder-radius%3A4px%3Bpadding%3A5px%2010px%3Bcursor%3Apointer%3Bmargin%3A4px%206px%200%200%3Bfont-size%3A12px%7D%5Cn%20%20%20%20%23raidcheck-panel%20button.sec%7Bbackground%3A%233a3d44%7D%5Cn%20%20%20%20%23raidcheck-panel%20.list%7Bbackground%3A%230d0f12%3Bborder%3A1px%20solid%20%23333%3Bborder-radius%3A4px%3Bpadding%3A6px%3Bwhite-space%3Apre-wrap%3Bword-break%3Abreak-word%7D%5Cn%20%20%20%20%23raidcheck-panel%20table%7Bborder-collapse%3Acollapse%3Bwidth%3A100%25%3Bfont-size%3A12px%3Bmargin-top%3A6px%7D%5Cn%20%20%20%20%23raidcheck-panel%20th%2C%23raidcheck-panel%20td%7Bborder-bottom%3A1px%20solid%20%232c2f36%3Bpadding%3A3px%205px%3Btext-align%3Aleft%3Bvertical-align%3Atop%7D%5Cn%20%20%20%20%23raidcheck-panel%20th%7Bposition%3Asticky%3Btop%3A-14px%3Bbackground%3A%2316181d%7D%5Cn%20%20%20%20%23raidcheck-panel%20.ok%7Bcolor%3A%237fd67f%7D%23raidcheck-panel%20.no%7Bcolor%3A%23ff8080%7D%23raidcheck-panel%20.dim%7Bcolor%3A%23999%7D%5Cn%20%20%20%20%23raidcheck-close%7Bposition%3Aabsolute%3Btop%3A8px%3Bright%3A10px%3Bcursor%3Apointer%3Bfont-size%3A18px%3Bcolor%3A%23aaa%7D%5Cn%20%20%3C%2Fstyle%3E%5Cn%20%20%3Cspan%20id%3D%22raidcheck-close%22%20title%3D%22Close%22%3E%26times%3B%3C%2Fspan%3E%5Cn%20%20%3Ch2%3ERaid%20check%3C%2Fh2%3E%5Cn%20%20%3Cdiv%20class%3D%22dim%22%3EReport%20codes%20or%20links%2C%20one%20per%20line.%20Reports%20from%20the%20same%20raid%20night%20(e.g.%20MC%20%2B%20BWL)%20are%20combined.%3C%2Fdiv%3E%5Cn%20%20%3Ctextarea%20id%3D%22raidcheck-codes%22%3E%3C%2Ftextarea%3E%5Cn%20%20%3Cbutton%20id%3D%22raidcheck-run%22%3ERun%3C%2Fbutton%3E%5Cn%20%20%3Cdiv%20id%3D%22raidcheck-status%22%20class%3D%22dim%22%20style%3D%22margin-top%3A6px%22%3E%3C%2Fdiv%3E%5Cn%20%20%3Cdiv%20id%3D%22raidcheck-out%22%3E%3C%2Fdiv%3E'%2Cdocument.body.appendChild(g)%2Cg.querySelector(%22%23raidcheck-close%22).onclick%3D()%3D%3Eg.remove()%3Bconst%20u%3Dlocation.pathname.match(%2F%5C%2Freports%5C%2F(%5BA-Za-z0-9%5D%7B16%7D)%2F)%3Bg.querySelector(%22%23raidcheck-codes%22).value%3Du%3Fu%5B1%5D%3A%22%22%3Bconst%20f%3De%3D%3Eg.querySelector(%22%23raidcheck-status%22).textContent%3De%3Basync%20function%20m(e%2Ct)%7Bf(%60%24%7Be%7D%3A%20loading%20fights...%60)%3Bconst%20n%3Dawait%20h(%60%2Freports%2Ffights-and-participants%2F%24%7Be%7D%2F0%3Flang%3Den%26%60%2C!0)%2Cr%3DMath.min(...n.fights.map((e%3D%3Ee.start_time)))%2Ci%3DMath.max(...n.fights.map((e%3D%3Ee.end_time)))%2Cs%3Dnew%20Map(n.fights.filter((e%3D%3Ee.boss)).map((e%3D%3E%5Be.id%2Ce%5D)))%2Cc%3Dn.friendlies.filter((e%3D%3El.includes(e.type)))%3Blet%20p%3D0%3Bawait%20async%20function(e%2Ct%2Cn)%7Bconst%20r%3D%5B%5D%3Blet%20a%3D0%3Breturn%20await%20Promise.all(Array.from(%7Blength%3At%7D%2C(async()%3D%3E%7Bfor(%3Ba%3Ce.length%3B)%7Bconst%20t%3Da%2B%2B%3Br%5Bt%5D%3Dawait%20n(e%5Bt%5D)%7D%7D)))%2Cr%7D(c%2C6%2C(async%20n%3D%3E%7Bconst%20l%3Dt%5Bn.name%5D%7C%7C%3D%7Bname%3An.name%2Ccls%3An.type%2Cauras%3Anew%20Map%2Cgear%3Anull%2Coil%3A!1%7D%2Cg%3Dawait%20h(%60%2Freports%2Fauras%2F%24%7Be%7D%2F0%2F%24%7Br%7D%2F%24%7Bi%7D%2Fbuffs%2F0%2F0%2F%24%7Bn.id%7D%2F0%2F0%2Fsource%2F0%2F-1.0.-1.-1%2F0%2FAny%2FAny%2F0%60)%3B(new%20DOMParser).parseFromString(g%2C%22text%2Fhtml%22).querySelectorAll('a%5Bid%5E%3D%22ability-%22%5D').forEach((e%3D%3El.auras.set(d(e.textContent)%2C(l.auras.get(d(e.textContent))%7C%7Cnew%20Set).add(e.id.split(%22-%22)%5B1%5D))))%3Bconst%20u%3D(n.fights%7C%7C%22%22).split(%22.%22).filter(Boolean).map(Number).filter((e%3D%3Es.has(e)))%3Bfor(const%20t%20of%20u)%7Bconst%20r%3Ds.get(t)%2Ci%3D((await%20h(%60%2Freports%2Fsummary-events%2F%24%7Be%7D%2F%24%7Bt%7D%2F%24%7Br.start_time%7D%2F%24%7Br.end_time%7D%2F%24%7Bn.id%7D%2F0%2FAny%2F0%2F-1.0.-1.-1%2F0%60%2C!0)).events%7C%7C%5B%5D).find((e%3D%3E%22combatantinfo%22%3D%3D%3De.type%26%26e.sourceID%3D%3D%3Dn.id%26%26Array.isArray(e.gear)%26%26e.gear.length))%3Bif(i)%7Bif(l.gear%7C%7C(l.gear%3Di.gear)%2C%5B15%2C16%5D.some((e%3D%3Ei.gear%5Be%5D%3F.temporaryEnchant%26%26!o.includes(i.gear%5Be%5D.temporaryEnchant)))%26%26(l.oil%3D!0)%2Cl.gear%26%26l.oil)break%3Bif(l.gear%26%26!a)break%3Bif(u.indexOf(t)%3E%3D2)break%7D%7Df(%60%24%7Be%7D%3A%20%24%7B%2B%2Bp%7D%2F%24%7Bc.length%7D%20players%60)%7D))%7Dfunction%20k(o)%7Bconst%20l%3De%3D%3E%5B...o.auras.keys()%5D.some((t%3D%3Ep(t%2Ce)))%2Ch%3DObject.entries(e).filter(((%5B%2Ce%5D)%3D%3Ee.some(l))).map(((%5Be%5D)%3D%3Ee))%2Cg%3Dt.filter(l)%2Cu%3D%5B%5D%3Bfor(const%5Be%2Ct%5Dof%20Object.entries(n))%7Bconst%5Bn%2Cr%5D%3De.split(%22%23%22)%2Ca%3Do.auras.get(d(n))%3B!a%7C%7Cr%26%26!a.has(r)%7C%7Cu.push(t)%7Dr%26%26g.forEach((e%3D%3Eu.unshift(e)))%2Ca%26%26o.oil%26%26u.push(%22Weapon%20oil%2Fstone%22)%3Blet%20f%3Dnull%3Bif(o.gear)%7Bf%3D%5B%5D%3Bfor(const%5Be%2Ct%5Dof%20Object.entries(i))%7Bconst%20n%3Do.gear%5Be%5D%3Bn%26%26n.id%26%26((16!%3D%2Be%7C%7Cs.test(n.icon%7C%7C%22%22))%26%26(17!%3D%2Be%7C%7Cc.includes(o.cls))%26%26(n.permanentEnchant%7C%7Cf.push(t)))%7D%7Dreturn%7Bwb%3Ah%2Cflask%3Ag%2Ccons%3Au%2Cmissing%3Af%2CwbOk%3Ah.length%3E%3D2%26%26g.length%3E0%7C%7Ch.length%3E%3D3%7D%7Dg.querySelector(%22%23raidcheck-run%22).onclick%3Dasync()%3D%3E%7Bconst%20e%3D%5B...new%20Set(g.querySelector(%22%23raidcheck-codes%22).value.match(%2F%5BA-Za-z0-9%5D%7B16%7D%2Fg)%7C%7C%5B%5D)%5D%3Bif(!e.length)return%20f(%22No%20report%20code%20found.%22)%3Bg.querySelector(%22%23raidcheck-out%22).innerHTML%3D%22%22%3Btry%7Bconst%20t%3D%7B%7D%3Bfor(const%20n%20of%20e)await%20m(n%2Ct)%3B!function(e)%7Bconst%20t%3DObject.values(e).map((e%3D%3E(%7Bp%3Ae%2Cr%3Ak(e)%7D))).sort(((e%2Ct)%3D%3Ee.p.name.localeCompare(t.p.name)))%2Cn%3Dt.filter((e%3D%3Ee.r.wbOk)).map((e%3D%3Ee.p.name))%2Cr%3Dt.filter((e%3D%3Ee.r.cons.length%3E%3D1)).map((e%3D%3Ee.p.name))%2Ca%3Dt.filter((e%3D%3Ee.r.missing%26%260%3D%3D%3De.r.missing.length)).map((e%3D%3Ee.p.name))%2Co%3Dt.filter((e%3D%3E!e.r.missing)).map((e%3D%3Ee.p.name))%2Ci%3De%3D%3EString(e).replace(%2F%5B%26%3C%3E%22%5D%2Fg%2C(e%3D%3E(%7B%22%26%22%3A%22%26amp%3B%22%2C%22%3C%22%3A%22%26lt%3B%22%2C%22%3E%22%3A%22%26gt%3B%22%2C'%22'%3A%22%26quot%3B%22%7D%5Be%5D)))%2Cs%3D(e%2Ct%2Cn)%3D%3E%60%3Ch3%3E%24%7Be%7D%20(%24%7Bt.length%7D)%3C%2Fh3%3E%5Cn%20%20%20%20%20%20%3Cdiv%20class%3D%22list%22%20id%3D%22%24%7Bn%7D%22%3E%24%7Bi(t.join(%22%2C%20%22))%7C%7C'%3Cspan%20class%3D%22dim%22%3Enobody%3C%2Fspan%3E'%7D%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%3Cbutton%20class%3D%22sec%22%20data-copy%3D%22%24%7Bn%7D%22%3ECopy%3C%2Fbutton%3E%60%2Cc%3Dg.querySelector(%22%23raidcheck-out%22)%3Bc.innerHTML%3Ds(%22World%20buffs%3A%202%20%2B%20flask%2C%20or%203%2B%22%2Cn%2C%22rc-l1%22)%2Bs(%22Using%20consumes%20(1%2B)%22%2Cr%2C%22rc-l2%22)%2Bs(%22Fully%20enchanted%20(head%2C%20shoulders%2C%20legs%20skipped)%22%2Ca%2C%22rc-l3%22)%2B(o.length%3F%60%3Cdiv%20class%3D%22dim%22%20style%3D%22margin-top%3A6px%22%3ENo%20gear%20data%20(not%20in%20any%20boss%20pull)%3A%20%24%7Bi(o.join(%22%2C%20%22))%7D%3C%2Fdiv%3E%60%3A%22%22)%2B%60%3Ch3%3EDetails%3C%2Fh3%3E%3Cbutton%20class%3D%22sec%22%20id%3D%22rc-csv%22%3EDownload%20CSV%3C%2Fbutton%3E%5Cn%20%20%20%20%20%20%3Ctable%3E%3Cthead%3E%3Ctr%3E%3Cth%3EPlayer%3C%2Fth%3E%3Cth%3EWB%3C%2Fth%3E%3Cth%3EWorld%20buffs%3C%2Fth%3E%3Cth%3EFlask%3C%2Fth%3E%3Cth%3EConsumes%3C%2Fth%3E%3Cth%3EMissing%20enchants%3C%2Fth%3E%3C%2Ftr%3E%3C%2Fthead%3E%3Ctbody%3E%24%7Bt.map(((%7Bp%3Ae%2Cr%3At%7D)%3D%3E%60%3Ctr%3E%3Ctd%3E%24%7Bi(e.name)%7D%3C%2Ftd%3E%3Ctd%20class%3D%22%24%7Bt.wbOk%3F%22ok%22%3A%22%22%7D%22%3E%24%7Bt.wb.length%7D%3C%2Ftd%3E%3Ctd%3E%24%7Bi(t.wb.join(%22%2C%20%22))%7D%3C%2Ftd%3E%5Cn%20%20%20%20%20%20%20%20%20%20%3Ctd%3E%24%7Bi(t.flask.join(%22%2C%20%22))%7D%3C%2Ftd%3E%3Ctd%3E%24%7Bi(t.cons.filter((e%3D%3E!t.flask.includes(e))).join(%22%2C%20%22))%7D%3C%2Ftd%3E%5Cn%20%20%20%20%20%20%20%20%20%20%3Ctd%20class%3D%22%24%7Bt.missing%3Ft.missing.length%3F%22no%22%3A%22ok%22%3A%22dim%22%7D%22%3E%24%7Bt.missing%3Ft.missing.length%3Fi(t.missing.join(%22%2C%20%22))%3A%22none%22%3A%22no%20data%22%7D%3C%2Ftd%3E%3C%2Ftr%3E%60)).join(%22%22)%7D%3C%2Ftbody%3E%3C%2Ftable%3E%60%2Cc.querySelectorAll(%22%5Bdata-copy%5D%22).forEach((e%3D%3Ee.onclick%3D()%3D%3E%7Bnavigator.clipboard.writeText(c.querySelector(%22%23%22%2Be.dataset.copy).textContent)%2Ce.textContent%3D%22Copied%22%2CsetTimeout((()%3D%3Ee.textContent%3D%22Copy%22)%2C1200)%7D))%2Cc.querySelector(%22%23rc-csv%22).onclick%3D()%3D%3E%7Bconst%20e%3De%3D%3E%60%22%24%7BString(e).replace(%2F%22%2Fg%2C'%22%22')%7D%22%60%2Cn%3D%5B%5B%22Player%22%2C%22Class%22%2C%22World%20buff%20count%22%2C%22World%20buffs%22%2C%22Flask%22%2C%22WB%20rule%20met%22%2C%22Consumes%22%2C%22Uses%20consumes%22%2C%22Missing%20enchants%22%2C%22Fully%20enchanted%22%5D.join(%22%2C%22)%5D.concat(t.map(((%7Bp%3At%2Cr%3An%7D)%3D%3E%5Bt.name%2Ct.cls%2Cn.wb.length%2Cn.wb.join(%22%3B%20%22)%2Cn.flask.join(%22%3B%20%22)%2Cn.wbOk%3F%22yes%22%3A%22no%22%2Cn.cons.join(%22%3B%20%22)%2Cn.cons.length%3E%3D1%3F%22yes%22%3A%22no%22%2Cn.missing%3Fn.missing.join(%22%3B%20%22)%3A%22no%20data%22%2Cn.missing%3Fn.missing.length%3F%22no%22%3A%22yes%22%3A%22%22%5D.map(e).join(%22%2C%22))))%2Cr%3Ddocument.createElement(%22a%22)%3Br.href%3DURL.createObjectURL(new%20Blob(%5Bn.join(%22%5Cn%22)%5D%2C%7Btype%3A%22text%2Fcsv%22%7D))%2Cr.download%3D%22raid-check.csv%22%2Cr.click()%7D%7D(t)%2Cf(%60Done.%20%24%7Be.length%7D%20report(s)%2C%20%24%7BObject.keys(t).length%7D%20players.%60)%7Dcatch(e)%7Bf(%22Error%3A%20%22%2Be.message)%2Cconsole.error(e)%7D%7D%7D)()%3B" onclick="alert('Drag this button to your bookmarks bar instead of clicking it.');return false">Raid Check</a></li>
+<li>Open any report on <code>vanilla.warcraftlogs.com</code> and click the bookmark.</li>
+<li>A panel opens with that report filled in. Add more report links (one per line) to combine logs from the same night, such as MC + BWL, and press <b>Run</b>.</li>
+</ol>
+</div>
+
+<h2>Option 2: paste into the console</h2>
+<div class="card">
+<ol><li>Open a report on <code>vanilla.warcraftlogs.com</code>.</li>
+<li>Press F12, open the <b>Console</b> tab, paste the code below and press Enter. (Chrome may ask you to type <code>allow pasting</code> first.)</li></ol>
+<textarea id="src" readonly>/*
+ * Raid Check for vanilla.warcraftlogs.com
+ * Run it while a report page is open (paste into the DevTools console, or use the bookmarklet).
+ * Makes three lists:
+ *   1. World buffs: 2 world buffs + a flask, OR 3+ world buffs (all Dire Maul buffs together count as 1)
+ *   2. Consumes: players with at least MIN_CONSUMES consumables
+ *   3. Enchants: players with every required slot enchanted (head, shoulders and legs are skipped)
+ * It uses the same data the report pages load, so no API key or login is needed.
+ */
+(async () =&gt; {
+  // ---------- settings (edit freely) ----------
+  const MIN_CONSUMES = 1;
+
+  // World buffs, matched by buff name as it appears in the log.
+  // Every name in one group counts as ONE world buff.
+  const WORLD_BUFFS = {
+    'Ony/Nef': ['Rallying Cry of the Dragonslayer'],
+    'Rend': [&quot;Warchief's Blessing&quot;],
+    'ZG': ['Spirit of Zandalar'],
+    'Songflower': ['Songflower Serenade'],
+    'DMT': [&quot;Fengus' Ferocity&quot;, &quot;Mol'dar's Moxie&quot;, &quot;Slip'kik's Savvy&quot;],
+    'DMF': [/^Sayge's Dark Fortune/],
+  };
+
+  const FLASKS = ['Flask of the Titans', 'Distilled Wisdom', 'Supreme Power',
+    'Chromatic Resistance', 'Flask of Petrification', 'Petrification'];
+
+  // Consumables, matched by buff name (&quot;Name&quot;) or by name+spell id (&quot;Name#id&quot;) when the name is ambiguous.
+  // Value = label shown in the results.
+  const CONSUMES = {
+    'Elixir of the Mongoose': 'Mongoose', 'Elixir of the Giants': 'Giants', 'Greater Agility': 'Greater Agility',
+    'Greater Arcane Elixir': 'Greater Arcane', 'Arcane Elixir': 'Arcane Elixir', 'Greater Firepower': 'Greater Firepower',
+    'Fire Power': 'Firepower', 'Frost Power': 'Frost Power', 'Shadow Power': 'Shadow Power', 'Mageblood Elixir': 'Mageblood',
+    'Health II': 'Fortitude', 'Greater Armor': 'Superior Defense', 'Juju Power': 'Juju Power', 'Juju Might': 'Juju Might',
+    'Winterfall Firewater': 'Firewater', 'Rage of Ages': 'R.O.I.D.S.', 'Strike of the Scorpok': 'Scorpok',
+    'Infallible Mind': 'Cerebral Cortex', 'Spirit of Zanza': 'Spirit of Zanza', 'Swiftness of Zanza': 'Swiftness of Zanza',
+    'Sheen of Zanza': 'Sheen of Zanza', 'Gordok Green Grog': 'Green Grog', &quot;Kreeg's Stout Beatdown&quot;: &quot;Kreeg's&quot;,
+    'Rumsey Rum Black Label': 'Rumsey Rum', 'Blessed Sunfruit': 'Sunfruit', 'Blessed Sunfruit Juice': 'Sunfruit Juice',
+    'Well Fed': 'Food', 'Mana Regeneration#18194': 'Nightfin Soup', 'Increased Agility#18192': 'Grilled Squid',
+    'Increased Stamina#18191': 'Food (Stamina)', 'Increased Stamina#25661': 'Chimaerok Chops',
+    'Increased Intellect#22730': 'Runn Tum Tuber', 'Greater Stoneshield': 'Greater Stoneshield',
+    'Fire Protection#17543': 'GFPP', 'Nature Protection#17546': 'GNPP', 'Shadow Protection#17548': 'GSPP',
+    'Arcane Protection#17549': 'GAPP', 'Frost Protection#17544': 'GFrPP', 'Free Action#6615': 'Free Action',
+    'Restoration#11359': 'Restorative', 'Regeneration#24361': 'Major Troll Blood', 'Mighty Rage#17528': 'Mighty Rage',
+    'Noggenfogger Elixir': 'Noggenfogger',
+  };
+  const COUNT_FLASK_AS_CONSUME = true;
+  const COUNT_WEAPON_OIL_AS_CONSUME = true; // temporary weapon enchant at a boss pull (oil / sharpening stone)
+  // Temporary weapon enchants that are NOT consumables (rogue poisons). Seen only on rogues in your logs.
+  const NOT_OIL = [625, 627];
+
+  // Gear slots (index in the log's gear list) that must be enchanted. Head 0, shoulders 2 and legs 6 are skipped.
+  const SLOTS = { 4: 'Chest', 7: 'Feet', 8: 'Wrist', 9: 'Hands', 14: 'Back', 15: 'Main hand', 16: 'Off hand', 17: 'Ranged' };
+  // Off hand only counts when it is a weapon or shield (holdable caster off-hands cannot be enchanted).
+  const OFFHAND_ENCHANTABLE = /^inv_(shield|sword|axe|mace|hammer|weapon|knife|staff|spear|gauntlets)/i;
+  const RANGED_CLASSES = ['Hunter']; // ranged slot (scope) only checked for these classes
+  // ---------------------------------------------
+
+  const CLASSES = ['Warrior', 'Rogue', 'Hunter', 'Mage', 'Warlock', 'Priest', 'Druid', 'Paladin', 'Shaman'];
+  const norm = s =&gt; s.replace(/[‘’`]/g, &quot;'&quot;).trim();
+  const match = (name, pat) =&gt; pat instanceof RegExp ? pat.test(name) : norm(pat) === name;
+
+  async function pool(items, n, fn) {
+    const out = []; let i = 0;
+    await Promise.all(Array.from({ length: n }, async () =&gt; { while (i &lt; items.length) { const k = i++; out[k] = await fn(items[k]); } }));
+    return out;
+  }
+  async function get(url, json) {
+    for (let t = 0; t &lt; 3; t++) {
+      const r = await fetch(url, { credentials: 'include' });
+      if (r.ok) return json ? r.json() : r.text();
+      await new Promise(res =&gt; setTimeout(res, 1000 * (t + 1)));
+    }
+    throw new Error('Request failed: ' + url);
+  }
+
+  // ---------- UI ----------
+  document.getElementById('raidcheck-panel')?.remove();
+  const P = document.createElement('div');
+  P.id = 'raidcheck-panel';
+  P.innerHTML = `
+  &lt;style&gt;
+    #raidcheck-panel{position:fixed;top:20px;right:20px;width:min(760px,calc(100vw - 40px));max-height:calc(100vh - 40px);overflow:auto;z-index:2147483647;background:#16181d;color:#e6e6e6;border:1px solid #444;border-radius:8px;padding:14px 16px;font:13px/1.45 Arial,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.6)}
+    #raidcheck-panel h2{font-size:16px;margin:0 0 8px}
+    #raidcheck-panel h3{font-size:14px;margin:14px 0 4px}
+    #raidcheck-panel textarea{width:100%;box-sizing:border-box;height:52px;background:#0d0f12;color:#e6e6e6;border:1px solid #444;border-radius:4px;font:12px monospace;padding:6px}
+    #raidcheck-panel button{background:#2f5aa8;color:#fff;border:0;border-radius:4px;padding:5px 10px;cursor:pointer;margin:4px 6px 0 0;font-size:12px}
+    #raidcheck-panel button.sec{background:#3a3d44}
+    #raidcheck-panel .list{background:#0d0f12;border:1px solid #333;border-radius:4px;padding:6px;white-space:pre-wrap;word-break:break-word}
+    #raidcheck-panel table{border-collapse:collapse;width:100%;font-size:12px;margin-top:6px}
+    #raidcheck-panel th,#raidcheck-panel td{border-bottom:1px solid #2c2f36;padding:3px 5px;text-align:left;vertical-align:top}
+    #raidcheck-panel th{position:sticky;top:-14px;background:#16181d}
+    #raidcheck-panel .ok{color:#7fd67f}#raidcheck-panel .no{color:#ff8080}#raidcheck-panel .dim{color:#999}
+    #raidcheck-close{position:absolute;top:8px;right:10px;cursor:pointer;font-size:18px;color:#aaa}
+  &lt;/style&gt;
+  &lt;span id=&quot;raidcheck-close&quot; title=&quot;Close&quot;&gt;&amp;times;&lt;/span&gt;
+  &lt;h2&gt;Raid check&lt;/h2&gt;
+  &lt;div class=&quot;dim&quot;&gt;Report codes or links, one per line. Reports from the same raid night (e.g. MC + BWL) are combined.&lt;/div&gt;
+  &lt;textarea id=&quot;raidcheck-codes&quot;&gt;&lt;/textarea&gt;
+  &lt;button id=&quot;raidcheck-run&quot;&gt;Run&lt;/button&gt;
+  &lt;div id=&quot;raidcheck-status&quot; class=&quot;dim&quot; style=&quot;margin-top:6px&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;raidcheck-out&quot;&gt;&lt;/div&gt;`;
+  document.body.appendChild(P);
+  P.querySelector('#raidcheck-close').onclick = () =&gt; P.remove();
+  const cur = location.pathname.match(/\/reports\/([A-Za-z0-9]{16})/);
+  P.querySelector('#raidcheck-codes').value = cur ? cur[1] : '';
+  const status = s =&gt; P.querySelector('#raidcheck-status').textContent = s;
+
+  P.querySelector('#raidcheck-run').onclick = async () =&gt; {
+    const codes = [...new Set((P.querySelector('#raidcheck-codes').value.match(/[A-Za-z0-9]{16}/g) || []))];
+    if (!codes.length) return status('No report code found.');
+    P.querySelector('#raidcheck-out').innerHTML = '';
+    try {
+      const players = {}; // name -&gt; data
+      for (const code of codes) await scanReport(code, players);
+      render(players);
+      status(`Done. ${codes.length} report(s), ${Object.keys(players).length} players.`);
+    } catch (e) { status('Error: ' + e.message); console.error(e); }
+  };
+
+  async function scanReport(code, players) {
+    status(`${code}: loading fights...`);
+    const fp = await get(`/reports/fights-and-participants/${code}/0?lang=en&amp;`, true);
+    const start = Math.min(...fp.fights.map(f =&gt; f.start_time)), end = Math.max(...fp.fights.map(f =&gt; f.end_time));
+    const bossFights = new Map(fp.fights.filter(f =&gt; f.boss).map(f =&gt; [f.id, f]));
+    const people = fp.friendlies.filter(f =&gt; CLASSES.includes(f.type));
+    let done = 0;
+    await pool(people, 6, async f =&gt; {
+      const p = players[f.name] ||= { name: f.name, cls: f.type, auras: new Map(), gear: null, oil: false };
+      // buffs on this player across the whole report
+      const html = await get(`/reports/auras/${code}/0/${start}/${end}/buffs/0/0/${f.id}/0/0/source/0/-1.0.-1.-1/0/Any/Any/0`);
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      doc.querySelectorAll('a[id^=&quot;ability-&quot;]').forEach(a =&gt; p.auras.set(norm(a.textContent), (p.auras.get(norm(a.textContent)) || new Set()).add(a.id.split('-')[1])));
+      // gear at the first boss pull this player was in
+      const fightIds = (f.fights || '').split('.').filter(Boolean).map(Number).filter(id =&gt; bossFights.has(id));
+      for (const id of fightIds) {
+        const bf = bossFights.get(id);
+        const ev = await get(`/reports/summary-events/${code}/${id}/${bf.start_time}/${bf.end_time}/${f.id}/0/Any/0/-1.0.-1.-1/0`, true);
+        const ci = (ev.events || []).find(e =&gt; e.type === 'combatantinfo' &amp;&amp; e.sourceID === f.id &amp;&amp; Array.isArray(e.gear) &amp;&amp; e.gear.length);
+        if (ci) {
+          if (!p.gear) p.gear = ci.gear;
+          if ([15, 16].some(i =&gt; ci.gear[i]?.temporaryEnchant &amp;&amp; !NOT_OIL.includes(ci.gear[i].temporaryEnchant))) p.oil = true;
+          if (p.gear &amp;&amp; p.oil) break;
+          if (p.gear &amp;&amp; !COUNT_WEAPON_OIL_AS_CONSUME) break;
+          if (fightIds.indexOf(id) &gt;= 2) break; // check at most 3 pulls for oils
+        }
+      }
+      status(`${code}: ${++done}/${people.length} players`);
+    });
+  }
+
+  function evaluate(p) {
+    const has = pat =&gt; [...p.auras.keys()].some(n =&gt; match(n, pat));
+    const wb = Object.entries(WORLD_BUFFS).filter(([, pats]) =&gt; pats.some(has)).map(([k]) =&gt; k);
+    const flask = FLASKS.filter(has);
+    const cons = [];
+    for (const [key, label] of Object.entries(CONSUMES)) {
+      const [nm, id] = key.split('#');
+      const ids = p.auras.get(norm(nm));
+      if (ids &amp;&amp; (!id || ids.has(id))) cons.push(label);
+    }
+    if (COUNT_FLASK_AS_CONSUME) flask.forEach(f =&gt; cons.unshift(f));
+    if (COUNT_WEAPON_OIL_AS_CONSUME &amp;&amp; p.oil) cons.push('Weapon oil/stone');
+    let missing = null;
+    if (p.gear) {
+      missing = [];
+      for (const [i, label] of Object.entries(SLOTS)) {
+        const it = p.gear[i];
+        if (!it || !it.id) continue;
+        if (+i === 16 &amp;&amp; !OFFHAND_ENCHANTABLE.test(it.icon || '')) continue;
+        if (+i === 17 &amp;&amp; !RANGED_CLASSES.includes(p.cls)) continue;
+        if (!it.permanentEnchant) missing.push(label);
+      }
+    }
+    return { wb, flask, cons, missing, wbOk: (wb.length &gt;= 2 &amp;&amp; flask.length &gt; 0) || wb.length &gt;= 3 };
+  }
+
+  function render(players) {
+    const rows = Object.values(players).map(p =&gt; ({ p, r: evaluate(p) })).sort((a, b) =&gt; a.p.name.localeCompare(b.p.name));
+    const L1 = rows.filter(x =&gt; x.r.wbOk).map(x =&gt; x.p.name);
+    const L2 = rows.filter(x =&gt; x.r.cons.length &gt;= MIN_CONSUMES).map(x =&gt; x.p.name);
+    const L3 = rows.filter(x =&gt; x.r.missing &amp;&amp; x.r.missing.length === 0).map(x =&gt; x.p.name);
+    const noGear = rows.filter(x =&gt; !x.r.missing).map(x =&gt; x.p.name);
+    const esc = s =&gt; String(s).replace(/[&amp;&lt;&gt;&quot;]/g, c =&gt; ({ '&amp;': '&amp;amp;', '&lt;': '&amp;lt;', '&gt;': '&amp;gt;', '&quot;': '&amp;quot;' }[c]));
+    const block = (title, names, id) =&gt; `&lt;h3&gt;${title} (${names.length})&lt;/h3&gt;
+      &lt;div class=&quot;list&quot; id=&quot;${id}&quot;&gt;${esc(names.join(', ')) || '&lt;span class=&quot;dim&quot;&gt;nobody&lt;/span&gt;'}&lt;/div&gt;
+      &lt;button class=&quot;sec&quot; data-copy=&quot;${id}&quot;&gt;Copy&lt;/button&gt;`;
+    const out = P.querySelector('#raidcheck-out');
+    out.innerHTML =
+      block('World buffs: 2 + flask, or 3+', L1, 'rc-l1') +
+      block(`Using consumes (${MIN_CONSUMES}+)`, L2, 'rc-l2') +
+      block('Fully enchanted (head, shoulders, legs skipped)', L3, 'rc-l3') +
+      (noGear.length ? `&lt;div class=&quot;dim&quot; style=&quot;margin-top:6px&quot;&gt;No gear data (not in any boss pull): ${esc(noGear.join(', '))}&lt;/div&gt;` : '') +
+      `&lt;h3&gt;Details&lt;/h3&gt;&lt;button class=&quot;sec&quot; id=&quot;rc-csv&quot;&gt;Download CSV&lt;/button&gt;
+      &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Player&lt;/th&gt;&lt;th&gt;WB&lt;/th&gt;&lt;th&gt;World buffs&lt;/th&gt;&lt;th&gt;Flask&lt;/th&gt;&lt;th&gt;Consumes&lt;/th&gt;&lt;th&gt;Missing enchants&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;${
+        rows.map(({ p, r }) =&gt; `&lt;tr&gt;&lt;td&gt;${esc(p.name)}&lt;/td&gt;&lt;td class=&quot;${r.wbOk ? 'ok' : ''}&quot;&gt;${r.wb.length}&lt;/td&gt;&lt;td&gt;${esc(r.wb.join(', '))}&lt;/td&gt;
+          &lt;td&gt;${esc(r.flask.join(', '))}&lt;/td&gt;&lt;td&gt;${esc(r.cons.filter(c =&gt; !r.flask.includes(c)).join(', '))}&lt;/td&gt;
+          &lt;td class=&quot;${r.missing ? (r.missing.length ? 'no' : 'ok') : 'dim'}&quot;&gt;${r.missing ? (r.missing.length ? esc(r.missing.join(', ')) : 'none') : 'no data'}&lt;/td&gt;&lt;/tr&gt;`).join('')
+      }&lt;/tbody&gt;&lt;/table&gt;`;
+    out.querySelectorAll('[data-copy]').forEach(b =&gt; b.onclick = () =&gt; {
+      navigator.clipboard.writeText(out.querySelector('#' + b.dataset.copy).textContent);
+      b.textContent = 'Copied'; setTimeout(() =&gt; b.textContent = 'Copy', 1200);
+    });
+    out.querySelector('#rc-csv').onclick = () =&gt; {
+      const q = s =&gt; `&quot;${String(s).replace(/&quot;/g, '&quot;&quot;')}&quot;`;
+      const lines = [['Player', 'Class', 'World buff count', 'World buffs', 'Flask', 'WB rule met', 'Consumes', 'Uses consumes', 'Missing enchants', 'Fully enchanted'].join(',')]
+        .concat(rows.map(({ p, r }) =&gt; [p.name, p.cls, r.wb.length, r.wb.join('; '), r.flask.join('; '), r.wbOk ? 'yes' : 'no',
+          r.cons.join('; '), r.cons.length &gt;= MIN_CONSUMES ? 'yes' : 'no', r.missing ? r.missing.join('; ') : 'no data',
+          r.missing ? (r.missing.length ? 'no' : 'yes') : ''].map(q).join(',')));
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([lines.join('\n')], { type: 'text/csv' }));
+      a.download = 'raid-check.csv'; a.click();
+    };
+  }
+})();
+</textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('src').value);this.textContent='Copied'">Copy code</button></p>
+</div>
+
+<h2>What it checks</h2>
+<div class="card">
+<p><b>World buffs.</b> The rule is passed with 2 world buffs and a flask, or with 3 or more world buffs. The counted buffs are Ony/Nef, Rend, ZG, Songflower, Dire Maul and Darkmoon Faire. The three Dire Maul buffs count as 1. A buff counts if the player had it at any point in the log.</p>
+<p><b>Consumes.</b> Flasks, elixirs, Zanza, Juju and Blasted Lands buffs, food, alcohol, protection potions, Free Action and weapon oils or stones are all counted. Rogue poisons are not.</p>
+<p><b>Enchants.</b> Chest, feet, wrist, hands, back and main hand must be enchanted. So must the off hand if it's a weapon or shield, and the ranged slot for hunters. Head, shoulders and legs are skipped. Only whether an enchant exists is checked, not which one. Gear is read from the boss pulls.</p>
+<p class="muted">Everything is configurable in the settings block at the top of the code. To change it for the bookmarklet, edit the code and make a new bookmark whose URL is <code>javascript:</code> followed by the code.</p>
+</div>
+</main></body></html>
